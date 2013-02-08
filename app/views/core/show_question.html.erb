@@ -1,0 +1,31 @@
+<article>
+  <% question = @selected_question %>
+  <h2><%= question.details %></h2>
+
+<!-- Rails' form_tag does not seem to save much typing here, but it 
+does include the Rails hack to support PUT. Don't try this in a vanilla
+HTML form - it won't work just now! -->
+
+  <%= form_tag("core/choose_q1", :method => "put") do %>
+    <p class="answer">
+      <%= question.answer1 %>
+    </p>
+    <%= submit_tag("Vote for me!") %>
+  <% end %>
+
+  <%= form_tag("core/choose_q2", :method => "put") do %>
+    <p class="answer">
+      <%= question.answer2 %>
+    </p>
+    <%= submit_tag("Vote for me!") %>
+  <% end %>
+
+  <%= form_tag("core/choose_q3", :method => "put") do %>
+    <p class="answer">
+      <%= question.answer3 %>
+    </p>
+    <%= submit_tag("Vote for me!") %>
+  <% end %>
+</article>
+
+

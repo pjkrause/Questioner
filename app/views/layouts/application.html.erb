@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section id="wrapper">
+    <%= render 'layouts/navigation' %>
+
+    <% if notice %>
+      <p id="notice"><%= notice %></p>
+    <% end %>
+
+    <%= yield %>
+  </section>
+  
+</body>
+</html>

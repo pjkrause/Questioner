@@ -1,0 +1,5 @@
+<% @selected_question = Question.find_by_selected(true) %>
+<h1><%= @selected_question.details %></h1>
+
+<%= @selected_question.score_ans1 %>
+

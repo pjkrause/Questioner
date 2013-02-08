@@ -1,0 +1,74 @@
+#main-nav {
+  position: relative;
+  padding: 1em 0;
+  width: 450px;
+  height: 50px;
+  overflow: hidden;
+}
+
+ul.tabs {
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  left: 0;
+  top: 0;  
+  background: url(clouds2.jpg) no-repeat;
+}
+
+ul.tabs a:link, ul.tabs a:visited, ul.tabs a:active {
+  text-decoration: none;
+  color: #B20000;
+}
+
+ul.tabs a:hover {
+  text-decoration: underline;
+}
+
+ul.tabs a {
+  display: block;
+}
+
+ul.tabs {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #FFFF66;
+  margin-bottom: 10px;
+}
+
+ul.tabs li {
+  float: left;
+  width: 33.333333%;
+}
+
+ul.tabs .tab-label {
+  border: 1px solid #FFFF66;
+  margin: 0;
+  padding: 0.6em;
+  text-align: center;
+  font-weight: normal;
+  font-family: Futura, Arial, sans-serif;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+  -webkit-transition: background .85s ease-in-out;
+  -moz-transition: background .85s ease-in-out;
+  -o-transition: background .85s ease-in-out;
+  transition: background .85s ease-in-out;
+}
+
+ul.tabs .tab-label:hover {
+  background: rgba(100, 100, 100, 0.7);
+}
+
+ul.tabs li.selected .tab-label {
+  position: relative;
+  border-bottom: none;
+  top: 1px;
+  padding-bottom: 4px;
+  padding-top: 5px;
+  border-top: 2px solid #FFFF66;
+  margin-top: -5px;
+  background-color: #AAA;
+  font-weight: bold;
+}
+
