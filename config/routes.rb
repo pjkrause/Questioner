@@ -19,8 +19,6 @@ Questioner::Application.routes.draw do
 
   root :to => 'core#index'
 
-  break if ARGV.join.include? 'assets:precompile'
-  # Hack to attempt to sort out issue with ActiveAdmin in Heroku
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

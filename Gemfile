@@ -7,6 +7,7 @@ gem 'rails', '3.2.11'
 
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
+gem 'sass-rails',   '~> 3.2.3'
 
 group :development do
   gem 'sqlite3'
@@ -21,7 +22,7 @@ group :production do
   gem 'pg'
 end
 
-gem 'sass-rails',   '~> 3.2.3'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
